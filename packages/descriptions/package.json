@@ -6,7 +6,7 @@
     "antd",
     "admin",
     "ant-design",
-    "ant-design-pro"
+    "xu-design-pro"
   ],
   "sideEffects": [
     "*.less"
