@@ -1,5 +1,4 @@
 import React from 'react';
-import moment from 'moment';
 
 import ProDescriptions from '@ant-design/pro-descriptions';
 import { Button } from 'antd';
@@ -21,52 +20,6 @@ export default () => {
         </ProDescriptions.Item>
         <ProDescriptions.Item label="百分比" valueType="percent">
           100
-        </ProDescriptions.Item>
-        <ProDescriptions.Item
-          label="选择框"
-          valueEnum={{
-            all: { text: '全部', status: 'Default' },
-            open: {
-              text: '未解决',
-              status: 'Error',
-            },
-            closed: {
-              text: '已解决',
-              status: 'Success',
-            },
-            processing: {
-              text: '解决中',
-              status: 'Processing',
-            },
-          }}
-        >
-          open
-        </ProDescriptions.Item>
-        <ProDescriptions.Item
-          label="远程选择框"
-          request={async () => [
-            { label: '全部', value: 'all' },
-            { label: '未解决', value: 'open' },
-            { label: '已解决', value: 'closed' },
-            { label: '解决中', value: 'processing' },
-          ]}
-        >
-          closed
-        </ProDescriptions.Item>
-        <ProDescriptions.Item label="进度条" valueType="progress">
-          40
-        </ProDescriptions.Item>
-        <ProDescriptions.Item label="日期时间" valueType="dateTime">
-          {moment().valueOf()}
-        </ProDescriptions.Item>
-        <ProDescriptions.Item label="日期" valueType="date">
-          {moment().valueOf()}
-        </ProDescriptions.Item>
-        <ProDescriptions.Item label="日期区间" valueType="dateTimeRange">
-          {[moment().add(-1, 'd').valueOf(), moment().valueOf()]}
-        </ProDescriptions.Item>
-        <ProDescriptions.Item label="时间" valueType="time">
-          {moment().valueOf()}
         </ProDescriptions.Item>
         <ProDescriptions.Item label="代码块" valueType="code">
           {`
