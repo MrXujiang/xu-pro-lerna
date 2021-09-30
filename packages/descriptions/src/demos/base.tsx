@@ -4,6 +4,7 @@ import ProDescriptions from '@ant-design/pro-descriptions';
 import { Button } from 'antd';
 
 export default () => {
+  const a;
   return (
     <>
       <ProDescriptions column={2} title="高级定义列表" tooltip="包含了从服务器请求，columns等功能">
